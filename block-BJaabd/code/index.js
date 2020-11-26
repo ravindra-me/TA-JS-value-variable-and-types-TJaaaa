@@ -112,7 +112,7 @@ Take the value of `marks` (0-100) from user using `prompt` and `alert` the messa
 */
 
 // [Your code goes here]
-let marks = +prompt(`enter number between 1 to 100`);
+let marks = +prompt(`enter your Grade between 1 to 100`);
 switch(true){
   case marks > 90:
     alert(`Your Grade is AA`);
@@ -150,7 +150,15 @@ let num2 = Number(prompt(`please enter second number`));
 🎖Write a JavaScript conditional statement to find the sign (+, -) of product of three numbers. Take those three numbers from user using `prompt`. Display an alert box with the specified sign.
 */
 // [Your code goes here]
-
+let numOne = +prompt(`enter 1st number`);
+let numTwo = +prompt(`enter 2st number`);
+let numThree = +prompt(`enter 3st number`);
+let product = numOne * numTwo * numThree ;
+if(product>0){
+  alert(`the final value is positive`);
+}else{
+  alert(`the final value is negative`);
+}
 /* Calculator
  🎖Make a simple calculator with these functions. Using prompt, type conversion, if else statement. Use prompt to take the input from user i.e two numbers and an operation (Add, Sub, Mul, Div).
 
