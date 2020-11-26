@@ -71,13 +71,9 @@ Example:
 */
 let num1 = Number(prompt("please enter value num1"));
 let num2 = Number(prompt("please enter value num2"));
-if(num1===num2){
-    alert('equal');
-    alert('true')
-}else if(num1!==num2){
-    alert('not equal');
-    alert('false');
-}else if(num1===true && num2=== true){
-    alert('enter vailid number');
-}
 
+if(isNaN(num1) || isNaN(num2)){
+    alert(`enter valid number`);
+}else {
+    alert(num1===num2);
+}
