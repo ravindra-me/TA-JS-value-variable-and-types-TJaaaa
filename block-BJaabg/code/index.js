@@ -15,7 +15,7 @@ var amount = 0;
 // your code goes here
 while(amount<bank_balance){
     amount+=PHONE_PRICE
-    if(amount>SPENDING_THRESHOLD){
+    if(amount<SPENDING_THRESHOLD){
         amount+=ACCESSORY_PRICE;
     }
 }
