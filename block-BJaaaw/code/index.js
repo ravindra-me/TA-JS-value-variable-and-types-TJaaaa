@@ -82,7 +82,7 @@ switch(days){
     alert("month name is december it have 31 days");
     break 
   default:
-    alert('it is not of months');
+    alert('it is not of months number');
 }
 /* 7.
 - Write a program that take the salery of the user using prompt and alert the in -hand amount.You will find out the in -hand amount by deducting the tax amoun from salery.Conditions are given below.
@@ -110,30 +110,30 @@ Implement the condition give below using`if..else` and`switch` statement.
 let marks = Number (prompt("please enter your marks"));
 if(marks > 100){
     alert(`Marks can't be greater than 100`);
-}else if(marks > 80 & marks <100){
+}else if(marks > 80 && marks <100){
   alert(`Grade A`);
-}else if(marks > 50 & marks < 80){
+}else if(marks > 50 && marks < 80){
   alert(`Grade B`);
-}else if(marks > 30 & marks < 50){
+}else if(marks > 30 && marks < 50){
   alert(`Grade C`);
 }else{
   alert(`Grade D`);
 }
-switch(marks){
-case marks > 100:
-  alert(`Marks can't be greater than 100`);
-  break
-case marks > 80 & marks <100:
-  alert(`Grade A`);
-  break
-case marks > 50 & marks < 80:
-  alert(`Grade B`);
-  break
-case marks > 30 & marks < 50:
-  alert(`Grade C`);
-  break
-default:
-  alert(`Grade D`);
+switch(true){
+  case marks > 100:
+    alert(`Marks can't be greater than 100`);
+    break
+  case marks > 80 && marks <100:
+    alert(`Grade A`);
+    break
+  case marks > 50 && marks < 80:
+    alert(`Grade B`);
+    break
+  case marks > 30 && marks < 50:
+    alert(`Grade C`);
+    break
+  default:
+    alert(`Grade D`);
 }
 /* 9. Weather app
 
